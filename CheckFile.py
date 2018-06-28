@@ -1,11 +1,15 @@
+#!/usr/bin/env python3
+# encoding: utf-8
+
 import os
 from tkinter import *
 import tkinter
 
 def checkFile(file_name):
-    with open(file_name, 'r') as file:
+    with open(file_name, 'rb') as file:
+        # print(file,type(file))
         for file_line in file:
-            if '<<<<<<<' in file_line:
+            if '<<<<<<<' in str(file_line):
                 return '请检查文件:' + file_name
 
 def file_dir(path):
