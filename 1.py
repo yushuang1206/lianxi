@@ -1,7 +1,3 @@
+#coding=utf-8
 
-hello by origin add
-
-hello
 print('hello')
-
-change
